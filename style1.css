@@ -28,7 +28,6 @@ html {
 /*========================Nav Bar=========================*/
 .nav-bar {
   display: flex;
-  
   width: 100%;
   height: 90px;
   background-color: #021422;
@@ -38,6 +37,7 @@ html {
   position: sticky;
   top: 0;
   z-index: 1;
+  overflow: hidden;
 }
 .logo {
   flex: 1;
@@ -47,8 +47,8 @@ html {
   font-family: Satisfy;
 }
 .logo img {
-  height: 90px;
-  margin-top: 40px;
+  height: 100px;
+  margin-top: 10px;
 
 }
 ul.menu {
