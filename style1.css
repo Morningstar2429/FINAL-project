@@ -28,10 +28,10 @@ html {
 /*========================Nav Bar=========================*/
 .nav-bar {
   display: flex;
-  flex-flow: row wrap;
+  
   width: 100%;
   height: 90px;
-  background-color: #fff;
+  background-color: #021422;
   box-shadow: 3px 3px 10px lightslategray;
   align-items: center;
   justify-content: center;
@@ -46,10 +46,16 @@ html {
   margin-left: 50px;
   font-family: Satisfy;
 }
+.logo img {
+  height: 90px;
+  margin-top: 40px;
+
+}
 ul.menu {
   flex: 1;
   display: flex;
   flex-flow: row wrap;
+
 }
 .menu li {
   flex: 1;
@@ -60,11 +66,11 @@ ul.menu {
 }
 .menu li a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .menu li a:hover {
-  color: midnightblue;
+  color: #fde02f;
   text-decoration: underline;
 }
 /*=============================Banner=============================*/
@@ -384,6 +390,13 @@ ul.menu {
 .links ul {
   list-style-type: none;
 }
+.links ul li a{
+  text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    
+    display: block;
+}
 .links h3 {
   font-family: Barlow Condensed;
   font-weight: normal;
@@ -395,7 +408,7 @@ ul.menu {
   cursor: pointer;
   padding: 15px 0;
 }
-.links li:hover {
+.links li a:hover {
   color: #ffa801;
 }
 /*==========================Responsive=============================*/
