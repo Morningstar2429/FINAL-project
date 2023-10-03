@@ -31,7 +31,7 @@ html {
   width: 100%;
   height: 90px;
   background-color: #021422;
-  box-shadow: 3px 3px 10px lightslategray;
+  box-shadow: 3px 3px 10px rgb(22, 36, 53);
   align-items: center;
   justify-content: center;
   position: sticky;
@@ -48,7 +48,7 @@ html {
 }
 .logo img {
   height: 100px;
-  margin-top: 10px;
+  margin-top: 20px;
 
 }
 ul.menu {
@@ -63,6 +63,7 @@ ul.menu {
   font-size: 16px;
   font-family: "Barlow Condensed";
   text-align: center;
+  margin-top: px;
 }
 .menu li a {
   text-decoration: none;
@@ -401,7 +402,7 @@ ul.menu {
   font-family: Barlow Condensed;
   font-weight: normal;
   font-size: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .links li {
   font-family: Roboto;
