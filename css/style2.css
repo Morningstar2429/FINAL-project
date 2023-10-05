@@ -1400,6 +1400,7 @@ input[type="text"] {
     color: #000;
     position: relative; }
 
+/*------------------------Sign up-----------------------*/
 #colorlib-subscribe {
   background-size: cover;
   background-position: center center;
@@ -1418,7 +1419,8 @@ input[type="text"] {
     margin-bottom: 0; }
     #colorlib-subscribe .colorlib-heading h2 {
       color: #fff !important;
-      font-size: 34px; }
+      font-size: 34px; 
+    }
     #colorlib-subscribe .colorlib-heading p {
       font-size: 18px; }
 
