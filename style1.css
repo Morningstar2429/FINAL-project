@@ -256,9 +256,17 @@ ul.menu {
 }
 .cards .time {
   flex: 1;
+  margin-bottom: 10px;
+  
+  
+ 
 }
 .cards .location {
-  flex: 2;
+  flex: 1.5;
+  margin-bottom: 10px;
+  
+  
+  
 }
 .cards .cost {
   color: #4cafad;
