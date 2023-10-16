@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  input {
+    width: 36%;
+    padding: 7px;
+    margin: 15px 11px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-bottom: -29px;
+}
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Sign Up</h1>
+    <form id="signup-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+
+        <button type="button" id="signup-button" onclick="openPopup()">Sign Up</button>
+    </form>
+</div>
+
+    <script>
+       document.getElementById("signup-button").addEventListener("click", function () {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Perform validation with stored details (mocked)
+    if (validateUser(name, email, password)) {
+        // openPopup("Sign up successful!");
+        window.location.href="index.html";
+        alert("Success");
+    } else {
+        alert("Invalid user details. Please try again.");
+    }
+});
+
+// Mocked user validation function (replace this with your server-side logic)
+function validateUser(name, email, password) {
+    // Mocked stored user details
+    const storedUser = {
+        name: "John Doe",
+        email: "john@example.com",
+        password: "123",
+        name: "Sahil",
+        email: "sahildavkhar@gmail.com",
+        password: "1234",
+    };
+
+    // Check if the provided details match the stored details
+    if (name === storedUser.name && email === storedUser.email && password === storedUser.password) {
+        return true;
+    }
+
+    return false;
+}
+
+        // Function to open a pop-up window
+        // function openPopup(message) {
+        //    window.open("popup", "width=400,height=200");
+        //    alert(message);
+           
+        // }
+    </script>
+</body>
+</html>
