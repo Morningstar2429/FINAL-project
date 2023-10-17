@@ -1,6 +1,6 @@
 // Predefined stored values for matching
 const storedSearchValues = [
-    { search: "Paris", departure: "2023-10-20", arrival: "2023-10-25", guests: 2 },
+    { search: "Paris" },
     // Add more stored search values here
 ];
 
@@ -13,20 +13,14 @@ searchForm.addEventListener('submit', function (e) {
 
     // Get input values
     const search = document.getElementById('search-bar').value;
-    const departure = document.getElementById('departure-date').value;
-    const arrival = document.getElementById('arrival-date').value;
-    const guests = document.getElementById('guests').value;
 
     // Check if the search values match any predefined stored values
     const isMatch = storedSearchValues.some((storedValue) => {
         return (
-            storedValue.search === search &&
-            storedValue.departure === departure &&
-            storedValue.arrival === arrival &&
-            storedValue.guests == guests
+            storedValue.search === search
         );
     });
-
+console.log(isMatch);
     if (isMatch) {
         // Create a new HTML page with the search results
         const newPage = window.open('matched_search.html', '_blank');
@@ -40,9 +34,6 @@ searchForm.addEventListener('submit', function (e) {
             <body>
                 <h1>Search Results</h1>
                 <p>Search: ${search}</p>
-                <p>Departure Date: ${departure}</p>
-                <p>Arrival Date: ${arrival}</p>
-                <p>Guests: ${guests}</p>
                 <!-- Include additional content or styling here -->
             </body>
             </html>
